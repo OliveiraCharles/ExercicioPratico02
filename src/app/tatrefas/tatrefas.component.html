@@ -1,6 +1,22 @@
-  <ul>
-    <li *ngFor="let tarefa of tarefas" [ngStyle]="{ 'text-decoration': tarefa.concluida ? 'line-through' : 'none' }">
+<div class="container mt-5">
+  <ul class="list-group">
+    <li class="list-group-item active">
+      <h1>Lista de Tarefas</h1>
+    </li>
+    <li
+      class="list-group-item d-flex justify-content-between align-items-center"
+      *ngFor="let tarefa of tarefas"
+      [ngStyle]="{
+        'text-decoration': tarefa.concluida ? 'line-through' : 'none'
+      }"
+    >
       {{ tarefa.descricao }}
-      <button (click)="tarefa.concluida = !tarefa.concluida">Concluir</button>
+      <button
+        class="btn btn-outline-primary"
+        (click)="tarefa.concluida = !tarefa.concluida"
+      >
+        Concluir
+      </button>
     </li>
   </ul>
+</div>

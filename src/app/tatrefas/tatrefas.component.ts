@@ -7,10 +7,10 @@ import { Component } from '@angular/core';
 })
 export class TatrefasComponent {
   tarefas = [
-    { descricao: 'Fazer compras', concluida: true },
-    { descricao: 'Lavar o carro', concluida: false },
-    { descricao: 'Estudar para a prova', concluida: false },
-    { descricao: 'Ir à academia', concluida: true },
-    { descricao: 'Fazer o relatório', concluida: false }
+    { descricao: 'Tarefa 01', concluida: false },
+    { descricao: 'Tarefa 02', concluida: false },
+    { descricao: 'Tarefa 03', concluida: false },
+    { descricao: 'Tarefa 04', concluida: false },
+    { descricao: 'Tarefa 05', concluida: false }
   ];
 }
